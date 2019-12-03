@@ -1,0 +1,254 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display: block;
+}
+
+body {
+		font-family: 'Mountains of Christmas', cursive !important;
+background: url("img/santa.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #024421;
+}
+
+main {
+  margin: 5%;
+}
+
+.hide {
+  display: none;
+}
+
+h1{
+	font-family: 'Mountains of Christmas', cursive !important;
+	color: white;
+	font-size: 4rem !important;
+	margin: 3% 3% 0 3% !important;
+}
+.badge {
+	background:  #ff0000 !important;
+}
+.badge-2{
+	background: #74d680 !important;
+}
+
+
+.top {
+  display: flex;
+  justify-content: center;
+	margin-top:8%;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.red {
+	border-radius: 5px;
+border: solid 2px grey;
+padding: 20px;
+font-size: 150%;
+text-align: center;
+transition: background-color 1000ms;
+  padding: 20px;
+  background-color: #ff0000;
+
+  color: #fff;
+  font-size: 3rem;
+  width: 150px;
+  text-align: center;
+  margin: 2%;
+
+}
+
+.green {
+	border-radius: 5px;
+	border: solid 2px grey;
+  padding: 20px;
+  background-color:  #74d680;
+  color: #fff;
+  font-size: 3rem;
+  width: 150px;
+  text-align: center;
+  margin: 2%;
+
+}
+
+.white {
+	border-radius: 5px;
+	border: solid 2px grey;
+  padding: 20px;
+  background: #fff;
+	color: black;
+  font-size: 3rem;
+  width: 150px;
+  text-align: center;
+  margin-top: -20px;
+  margin: 2%;
+
+}
+
+.pink {
+	border-radius: 5px;
+border: solid 2px grey;
+  padding: 20px;
+  background-color: #ff7878;
+  color: #fff;
+  font-size: 3rem;
+  width: 150px;
+  text-align: center;
+  margin-top: -20px;
+  margin: 2%;
+
+}
+
+#fortune {
+  text-align: center;
+  padding: 20px;
+  background-color: #ff0000;
+  color: white;
+  margin: 5%;
+}
+
+.message {
+  background: url('img/stripes.jpg');
+  color: white;
+  text-align: center;
+	padding: 20px;
+  font-size: 2rem;
+  margin: 5%;
+		overflow-y: hidden;
+		max-height: 500px;
+		transition-property: all;
+		transition-duration: 2s;
+}
+
+
+/*Fortune Movement Classes========================================*/
+.scale-down-center {
+	-webkit-animation: scale-down-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-down-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.slide-right {
+	-webkit-animation: slide-right 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-right 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.slide-left {
+	-webkit-animation: slide-left 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.tracking-in-contract {
+	-webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+/*Keyframes=======================================================*/
+/**
+ * ----------------------------------------
+ * animation scale-down-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes scale-down-center {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
+@keyframes scale-down-center {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
+
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+}
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+}
+/**
+ * ----------------------------------------
+ * animation tracking-in-contract
+ * ----------------------------------------
+ */
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
